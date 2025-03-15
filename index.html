@@ -397,7 +397,7 @@
             </nav>
             
             <div class="hero" id="home">
-                <h1>Hello, I'm <span>Paul Trood</span></h1>
+                <h1 id="hero-title"></h1>
                 <p>A data-driven developer blending analytical insight with innovative coding to craft digital experiences that drive impact.</p>
                 <div>
                     <a href="#portfolio" class="btn">View My Work</a>
@@ -494,13 +494,13 @@
             <div class="certifications-grid">
                 <div class="certification-item">
                     <a href="https://coursera.org/share/1a3215002f7074764abaf7c9bbae949b" target="_blank">
-                        <img src="Certificate-Coursera_Google_Data_Analytics.pdf.png" alt="Google Data Analytics Certificate">
+                        <img src="misc_documents/Certificate-Coursera_Google_Data_Analytics.pdf.png" alt="Google Data Analytics Certificate">
                     </a>
                     <p>Google Data Analytics Certification</p>
                 </div>
                 <div class="certification-item">
                     <a href="" target="_blank">
-                        <img src="the-complete-web-developer-zero-to-mastery.pdf.png" alt="Complete Web Developer (2025)">
+                        <img src="misc_documents/the-complete-web-developer-zero-to-mastery.pdf.png" alt="Complete Web Developer (2025)">
                     </a>
                     <p>Zero to Mastery Complete Web Developer (2025)</p>
                 </div>
@@ -517,11 +517,12 @@
     <footer>
         <div class="container">
             <h3>Let's Connect</h3>
+            <a href="" class="btn" id="download-resume">Download My Resume!</a>
             <div class="social-links">
                 <a href="https://github.com/paul-trood">GitHub</a>
                 <a href="https://www.linkedin.com/in/paul-trood/">LinkedIn</a>
                 <a href="https://paultrood.substack.com/">Substack</a>
-                <a href="#">Email</a>
+                <a href="mailto:troodpa@proton.me">Email</a>
             </div>
             <p>&copy; 2025 Paul Trood. All rights reserved.</p>
         </div>
@@ -589,6 +590,23 @@
         
         setTimeout(typeWriter, 1000);
         */
+
+        const heroText = "Hello, I'm Paul Trood";
+        let i = 0;
+
+        function typeWriter() {
+            if (i < heroText.length) {
+                document.getElementById("hero-title").textContent += heroText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 90);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", typeWriter);
+
+
+
+
     </script>
 </body>
 </html>
