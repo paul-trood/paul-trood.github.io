@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/index_style.css">  <!-- Linking external CSS -->
+    <title>About Me - Paul Trood</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Portfolio</div>
+                <div class="logo">About Me</div>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="projects.html">Projects</a>
@@ -18,100 +20,37 @@
                     <a href="contact.html">Contact</a>
                 </div>
             </nav>
-            
-            <div class="hero" id="home">
-                <h1 id="hero-title"></h1>
-                <p>A data-driven developer blending analytical insight with innovative coding to craft digital experiences that drive impact.</p>
-                <div>
-                    <a href="#portfolio" class="btn">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                </div>
-            </div>
         </div>
     </header>
     
-    
-    <footer>
-        <div class="container">
-            <h3>Let's Connect</h3>
-            <a href="https://docs.google.com/document/d/1ETw6IgZSrGn1uPd0uOt4Dvsg1GhQGpLe/edit?usp=sharing&ouid=116579496930530589913&rtpof=true&sd=true" 
-            class="btn" id="download-resume">Download My Resume!</a>
-            <div class="social-links">
-                <a href="https://github.com/paul-trood">GitHub</a>
-                <a href="https://www.linkedin.com/in/paul-trood/">LinkedIn</a>
-                <a href="https://paultrood.substack.com/">Substack</a>
-                <a href="mailto:troodpa@proton.me">Email</a>
-            </div>
-            <p>&copy; 2025 Paul Trood. All rights reserved.</p>
+    <div class="container">
+        <h1>something else</h1>
+        <p class="bio">
+            My journey started with earning my **Associate's Degree**, where I developed a strong foundation in analytical thinking and problem-solving. From there, I enlisted in the **U.S. Navy**, where I worked as a **Signal Analyst**, deciphering radar data and managing complex operational systems. This experience instilled in me a meticulous attention to detail and the ability to work under pressure in mission-critical situations.<br><br>
+            Transitioning into civilian life, I continued to hone my skills in **data analytics, programming, and operations management**. My role at the **Police Department** has given me extensive experience with **database management, record-keeping, and process optimization**, further strengthening my technical expertise. Simultaneously, I have developed and maintained a **personal blog and digital business**, leveraging **SEO, content strategy, and market analysis** to drive engagement and sales.<br><br>
+            Today, I bring a unique blend of **technical, analytical, and creative skills**, allowing me to **optimize processes, develop digital solutions, and craft impactful data-driven strategies**.
+        </p>
+        
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill">Data Analysis (SQL, Python, Pandas)</div>
+            <div class="skill">Web Development (JavaScript, HTML, CSS)</div>
+            <div class="skill">Database Management</div>
+            <div class="skill">SEO & Content Strategy</div>
+            <div class="skill">Technical Writing & Copywriting</div>
         </div>
-    </footer>
-    
-    <a href="#home" class="back-to-top">↑</a>
-    
-    <script>
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
         
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('active');
-            } else {
-                backToTopButton.classList.remove('active');
-            }
-        });
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="img/navy.jpg" alt="Navy Experience">
+            <img src="img/analytics.jpg" alt="Data Analysis Work">
+            <img src="img/blog.jpg" alt="Blogging and SEO Work">
+        </div>
         
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Reveal animations for portfolio items
-        function revealPortfolioItems() {
-            const items = document.querySelectorAll('.portfolio-item');
-            items.forEach(item => {
-                // Reset animation to allow it to play again when scrolled back into view
-                item.style.animation = 'none';
-                item.offsetHeight; // Trigger reflow
-                item.style.animation = null;
-            });
-        }
-        
-        // Run once on page load
-        window.addEventListener('load', revealPortfolioItems);
-        
-        // Add more animations or interactions here
-        
-        // Typing effect for the hero title (uncomment to use)
-
-        const heroText = "Hello, I'm Paul Trood";
-        let i = 0;
-
-        function typeWriter() {
-            if (i < heroText.length) {
-                document.getElementById("hero-title").textContent += heroText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 90);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", typeWriter);
-
-        // Replace with your actual resume file path
-
-        document.getElementById("download-resume").addEventListener("click", function() {
-            window.location.href = "resume.pdf";  
-        });
-
-    </script>
+        <div class="cta">
+            <h2>Let's Connect</h2>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
 </body>
 </html>

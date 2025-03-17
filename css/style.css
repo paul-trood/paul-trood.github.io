@@ -21,61 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    background-color: var(--dark);
-    color: var(--light);
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary);
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: var(--light);
-    text-decoration: none;
-    transition: var(--transition);
-    position: relative;
-    font-weight: 500;
-}
-
-.nav-links a:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--primary);
-    left: 0;
-    bottom: -5px;
-    transition: var(--transition);
-}
-
-.nav-links a:hover:after {
-    width: 100%;
-}
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -336,39 +281,4 @@ footer {
     .nav-links {
         display: none;
     }
-}
-
-.certifications {
-padding: 4rem 0;
-}
-
-.certifications-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 2rem;
-justify-content: center;
-margin-top: 3rem;
-}
-
-.certification-item {
-text-align: center;
-}
-
-.certification-item img {
-width: 100%;
-max-width: 250px;
-border-radius: 8px;
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-transition: var(--transition);
-}
-
-.certification-item img:hover {
-transform: scale(1.05);
-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.certification-item p {
-margin-top: 0.5rem;
-font-weight: 600;
-color: var(--secondary);
 }

@@ -1,0 +1,104 @@
+
+        :root {
+            --primary: #5D67E9;
+            --secondary: #2C2F4E;
+            --light: #F5F5F7;
+            --dark: #121212;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            color: var(--primary);
+        }
+        
+        .bio {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .skill {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .cta {
+            margin-top: 30px;
+        }
+        
+        .cta a {
+            background: var(--secondary);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        
+        .cta a:hover {
+            background: var(--primary);
+        }
+        
+        .gallery {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            background-color: var(--dark);
+            color: var(--light);
+            padding: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+          }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        

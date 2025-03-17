@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/index_style.css">  <!-- Linking external CSS -->
+    <link rel="stylesheet" href="css/style.css">  <!-- Linking external CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/certifications.css">
 </head>
 <body>
     <header>
@@ -17,8 +19,7 @@
                     <a href="about.html">About</a>
                     <a href="contact.html">Contact</a>
                 </div>
-            </nav>
-            
+            </nav>           
             <div class="hero" id="home">
                 <h1 id="hero-title"></h1>
                 <p>A data-driven developer blending analytical insight with innovative coding to craft digital experiences that drive impact.</p>
@@ -60,16 +61,16 @@
                         <img src="/api/placeholder/400/320" alt="Project 2" />
                     </div>
                     <div class="portfolio-content">
-                        <h3>Project Title 2</h3>
+                        <h3>Video Game Live Streaming Recommendations</h3>
                         <div class="portfolio-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Machine Learning</span>
                         </div>
                         <p>A brief description of your second project. Explain what you built and the technologies used.</p>
                         <div class="portfolio-links">
                             <a href="#">Live Demo</a>
-                            <a href="#">Source Code</a>
+                            <a href="https://github.com/paul-trood/Portfolio-live_streaming/tree/main">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -153,71 +154,7 @@
     </footer>
     
     <a href="#home" class="back-to-top">↑</a>
-    
-    <script>
-        // Back to top button
-        const backToTopButton = document.querySelector('.back-to-top');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.add('active');
-            } else {
-                backToTopButton.classList.remove('active');
-            }
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Reveal animations for portfolio items
-        function revealPortfolioItems() {
-            const items = document.querySelectorAll('.portfolio-item');
-            items.forEach(item => {
-                // Reset animation to allow it to play again when scrolled back into view
-                item.style.animation = 'none';
-                item.offsetHeight; // Trigger reflow
-                item.style.animation = null;
-            });
-        }
-        
-        // Run once on page load
-        window.addEventListener('load', revealPortfolioItems);
-        
-        // Add more animations or interactions here
-        
-        // Typing effect for the hero title (uncomment to use)
+    <script src="js/script.js"></script>
 
-        const heroText = "Hello, I'm Paul Trood";
-        let i = 0;
-
-        function typeWriter() {
-            if (i < heroText.length) {
-                document.getElementById("hero-title").textContent += heroText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 90);
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", typeWriter);
-
-        // Replace with your actual resume file path
-
-        document.getElementById("download-resume").addEventListener("click", function() {
-            window.location.href = "resume.pdf";  
-        });
-
-    </script>
 </body>
 </html>
