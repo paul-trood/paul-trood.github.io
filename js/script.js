@@ -41,20 +41,35 @@
         
         // Add more animations or interactions here
         
-        // Typing effect for the hero title (uncomment to use)
+        // Typing effect for the hero title
 
-        const heroText = "Hello, I'm Paul Trood";
-        let i = 0;
-
-        function typeWriter() {
-            if (i < heroText.length) {
-                document.getElementById("hero-title").textContent += heroText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 90);
+        document.addEventListener("DOMContentLoaded", function () {
+            const heroText = "Hello, I'm Paul Trood";
+            let i = 0;
+            const heroTitle = document.getElementById("hero-title");
+            const fadeInText = document.getElementById("fade-in-text");
+        
+            // Ensure text is fully hidden before applying transition
+            fadeInText.style.opacity = "0";
+            fadeInText.style.visibility = "hidden"; // Fully hide it
+        
+            function typeWriter() {
+                if (i < heroText.length) {
+                    heroTitle.textContent += heroText.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 90);
+                } else {
+                    // Once typing is done, show and fade in the text
+                    setTimeout(() => {
+                        fadeInText.style.visibility = "visible";
+                        fadeInText.style.opacity = "1";
+                    }, 100); // Adjust delay if needed
+                }
             }
-        }
-
-        document.addEventListener("DOMContentLoaded", typeWriter);
+        
+            typeWriter(); // Start the typewriter effect
+        });
+        
 
         // Replace with your actual resume file path
 
@@ -69,4 +84,20 @@
                 link.setAttribute("rel", "noopener noreferrer"); // Security best practice
             });
         });
+
+  // "Site under construction"
+        document.addEventListener("DOMContentLoaded", function() {
+            const underConstruction = document.createElement("div");
+            underConstruction.textContent = "⚠️ This website is still under construction. Check back for updates!";
+            underConstruction.style.position = "fixed";
+            underConstruction.style.bottom = "10px";
+            underConstruction.style.right = "10px";
+            underConstruction.style.backgroundColor = "rgba(255, 255, 0, 0.9)";
+            underConstruction.style.padding = "10px";
+            underConstruction.style.borderRadius = "5px";
+            underConstruction.style.fontWeight = "bold";
+            underConstruction.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
+            document.body.appendChild(underConstruction);
+        });
+
         

@@ -282,3 +282,14 @@ footer {
         display: none;
     }
 }
+
+#fade-in-text {
+    opacity: 0; /* Start fully invisible */
+    visibility: hidden; /* Ensure it's not rendered */
+    transition: opacity 1.0s ease-in-out; /* Smooth fade effect */
+}
+
+
+.fade-in {
+    opacity: 1;
+}
