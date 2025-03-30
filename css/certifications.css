@@ -32,4 +32,9 @@
     font-weight: 600;
     color: var(--secondary);
     }
+
+    .certification-item a {
+        color: #ff007f;
+        text-decoration:none
+    }
     
