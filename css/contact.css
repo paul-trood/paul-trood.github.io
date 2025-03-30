@@ -23,7 +23,7 @@
 .contact-form button {
     margin-top: 15px;
     padding: 10px 20px;
-    background: var(--primary);
+    background-color: #ff007f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -33,7 +33,7 @@
 }
 
 .contact-form button:hover {
-    background: var(--secondary);
+    transition: var(--transition);
 }
 
 .social-links {

@@ -1,5 +1,5 @@
 
-        :root {
+        /* :root {
             --primary: #5D67E9;
             --secondary: #2C2F4E;
             --light: #F5F5F7;
@@ -23,8 +23,20 @@
         
         h1 {
             color: var(--primary);
+        } */
+        
+        .profile {
+            text-align: left;
+            margin-bottom: 20px;
         }
         
+        .profile-img {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 50%; /* Makes it circular */
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
         .bio {
             font-size: 1.2rem;
             line-height: 1.6;
@@ -94,11 +106,12 @@
         .nav-links a:hover {
             color: var(--primary);
         }
+        
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        
+
         
