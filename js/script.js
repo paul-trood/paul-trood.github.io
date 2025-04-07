@@ -38,8 +38,7 @@
         
         // Run once on page load
         window.addEventListener('load', revealPortfolioItems);
-        
-        // Add more animations or interactions here
+
         
         // Typing effect for the hero title
 
@@ -69,21 +68,6 @@
         
             typeWriter(); // Start the typewriter effect
         });
-        
-
-        // Replace with your actual resume file path
-
-        document.getElementById("download-resume").addEventListener("click", function() {
-            window.location.href = "resume.pdf";  
-        });
-
-        // Open each link in a new tab
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll("a[href^='http']").forEach(link => {
-                link.setAttribute("target", "_blank");
-                link.setAttribute("rel", "noopener noreferrer"); // Security best practice
-            });
-        });
 
   // "Site under construction"
         document.addEventListener("DOMContentLoaded", function() {
@@ -92,12 +76,11 @@
             underConstruction.style.position = "fixed";
             underConstruction.style.bottom = "10px";
             underConstruction.style.right = "10px";
-            underConstruction.style.backgroundColor = "rgba(255, 255, 0, 0.9)";
+            underConstruction.style.backgroundColor = "rgba(101, 13, 11, 0.9)";
             underConstruction.style.padding = "10px";
             underConstruction.style.borderRadius = "5px";
             underConstruction.style.fontWeight = "bold";
             underConstruction.style.boxShadow = "0 0 10px rgba(0,0,0,0.2)";
             document.body.appendChild(underConstruction);
         });
-
-        
+    

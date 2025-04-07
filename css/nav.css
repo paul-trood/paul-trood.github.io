@@ -5,7 +5,12 @@ header {
     color: var(--text);
     padding: 1.5rem 0;
     border-bottom: 2px solid var(--primary);
+    background-image: url("../misc_documents/cityscape.jpg");
+    background-size: cover;
+    background-position: center;
 }
+
+
 
 .container {
     max-width: 1200px;

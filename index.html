@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/certifications.css">
 </head>
 <body>
+    <div class="cyberpunk-background"></div>
+    <div class="grid-overlay"></div>
+    <div class="horizontal-line"></div>    
     <header>
         <div class="container">
             <nav>
@@ -20,7 +23,7 @@
                     <a href="contact.html">Contact</a>
                 </div>
             </nav>           
-            <div class="hero" id="home">
+            <div class="hero" id="home">  
                 <h1 id="hero-title"></h1>
                 <p id="fade-in-text" class="hidden">A developer who blends data analysis, business strategy, and marketing insight to create impactful digital experiences.</p>
                 <div>
@@ -33,7 +36,7 @@
     
     <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title"><a href="projects.html" class="section-title">My Projects</a></h2>
             <div class="portfolio-grid">
                 <!-- Portfolio Item 1 -->
                 <div class="portfolio-item" style="--i:1">
@@ -78,19 +81,19 @@
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-item" style="--i:3">
                     <div class="portfolio-img">
-                        <img src="/api/placeholder/400/320" alt="Project 3" />
+                        <img src="misc_documents/survey.jpg" alt="Project 3" />
                     </div>
                     <div class="portfolio-content">
-                        <h3>Project Title 3</h3>
+                        <h3>Coding Survey</h3>
                         <div class="portfolio-tags">
-                            <span class="tag">Angular</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">TypeScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Market Analysis</span>
                         </div>
-                        <p>A brief description of your third project. Explain what you built and the technologies used.</p>
+                        <p>An analysis of what products to market to aspiring programmers.</p>
                         <div class="portfolio-links">
                             <a href="#">Live Demo</a>
-                            <a href="#">Source Code</a>
+                            <a href="https://github.com/paul-trood/coding_survey/tree/main">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +119,7 @@
 
     <section class="certifications" id="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title"><a href="certifications.html" class="section-title">Certifications</a></h2>
             <div class="certifications-grid">
                 <div class="certification-item">
                     <a href="https://coursera.org/share/1a3215002f7074764abaf7c9bbae949b" target="_blank">
@@ -143,8 +146,8 @@
     <footer>
         <div class="container">
             <h3>Let's Connect</h3>
-            <a href="https://docs.google.com/document/d/1uLYlz6Xi3Wjvfn_nA6aH23KuZSF8lhrv/edit?usp=sharing&ouid=116579496930530589913&rtpof=true&sd=true" 
-            class="btn" id="download-resume">Download My Resume!</a>
+            <a href="resume.html" 
+            class="btn" id="download-resume">View My Resume!</a>
             <div class="social-links">
                 <a href="https://github.com/paul-trood">GitHub</a>
                 <a href="https://www.linkedin.com/in/paul-trood/">LinkedIn</a>
@@ -157,6 +160,7 @@
     
     <a href="#home" class="back-to-top">↑</a>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 
 </body>
 </html>
