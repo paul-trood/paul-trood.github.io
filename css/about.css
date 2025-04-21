@@ -46,18 +46,19 @@
         
         .skills {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             flex-wrap: wrap;
             gap: 15px;
             margin-top: 20px;
         }
         
         .skill {
-            background: var(--primary);
+            /* background: var(--primary); */
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 1rem;
+
         }
         
         .cta {
